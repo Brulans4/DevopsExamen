@@ -30,5 +30,7 @@ describe("GamerTag", () => {
         expect(checkGamerTag("123456789")).toBe(false);
     });
 
-    
+    test("One number", () => {
+        expect(checkGamerTag("azertyu@i")).toBe(false);
+    });
 });
