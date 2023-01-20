@@ -19,10 +19,10 @@ describe("validations tests suites - isEmpty", () => {
 
 // TODO: Create tests suite for validation function
 
-const { validTag } = require('./services/validations');
+const { checkGamerTag } = require('./services/validations');
 
 describe("GamerTag", () => {
     test("less than 8 charachters", () => {
-        expect(validTag(a)).toBe(false);
+        expect(checkGamerTag(a)).toBe(false);
     });
 });
