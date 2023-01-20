@@ -8,7 +8,7 @@ const isEmpty = (label) => !label || label.length === 0;
 exports.isEmpty = isEmpty;
 
 module.exports.checkGamerTag = (Gamertag) =>{
-    const regex = "";
+    const regex = "^(?=.[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z\d@$!%*#?&]{8,}$";
     const found = Gamertag.match(regex);
 
     if(found === null || found.length === 0){
