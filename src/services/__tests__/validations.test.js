@@ -18,3 +18,11 @@ describe("validations tests suites - isEmpty", () => {
 });
 
 // TODO: Create tests suite for validation function
+
+const { validTag } = require('../validations.js');
+
+describe("GamerTag", () => {
+    test("less than 8 charachters", () => {
+        expect(validTag(a)).toBe(false);
+    })
+});
