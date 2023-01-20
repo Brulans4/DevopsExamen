@@ -33,4 +33,8 @@ describe("GamerTag", () => {
     test("One number", () => {
         expect(checkGamerTag("azertyu@i")).toBe(false);
     });
+
+    test("Valide tag", () => {
+        expect(checkGamerTag("@z3Rtyu1Op")).toBe(true);
+    });
 });
