@@ -22,7 +22,13 @@ describe("validations tests suites - isEmpty", () => {
 const { checkGamerTag } = require('./services/validations');
 
 describe("GamerTag", () => {
-    test("less than 8 charachters", () => {
-        expect(checkGamerTag(a)).toBe(false);
+    test("Less than 8 charachters", () => {
+        expect(checkGamerTag("1@")).toBe(false);
     });
+
+    test("One special characyer", () => {
+        expect(checkGamerTag("123456789")).toBe(false);
+    });
+
+    
 });
